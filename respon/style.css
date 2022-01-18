@@ -1,0 +1,43 @@
+body {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+#medium {
+  display: none;
+}
+#large {
+  display: none;
+}
+@media only screen and (min-width: 300px) {
+  body {
+    background-color: green;
+    font-size: 1.2em;
+  }
+  #medium {
+    display: flex;
+    flex-direction: column;
+  }
+  #small {
+    display: none;
+  }
+  #large {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+    font-size: 1.5em;
+  }
+  #large {
+    display: flex;
+    flex-direction: column;
+  }
+  #medium {
+    display: none;
+  }
+  #small {
+    display: none;
+  }
+}
