@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: teal;
+}
+.box h1 {
+  color: white;
+}
+.box p {
+  color: white;
+  font-family: helvetica;
+  font-weight: bolder;
+  font-size: 1em;
+}
+.box p:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
