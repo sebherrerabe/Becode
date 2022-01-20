@@ -26,7 +26,7 @@ rl.question("Enter the first number : ", function (nb1) {
           let isAscending = (a) => a.slice(1).every((e, i) => e > a[i]);
 
           console.log(`Is this new array ascendant ? : ${isAscending(array)}`);
-          rl.close;
+          rl.close();
         });
       });
     });
