@@ -23,6 +23,11 @@ body {
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
+  height: 80%;
+}
+.hd-content {
+  display: flex;
+  height: 100%;
 }
 .mg20 {
   margin-top: 20px;
@@ -34,23 +39,47 @@ header {
   margin-top: 10px;
   background-color: #005acf;
   color: white;
-  height: 80vh;
+  height: 70vh;
 }
 .hd-navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 12vh;
+}
+.desktop-h1 {
+  display: none;
+}
+.hd-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hd-left-bottom {
+  display: none;
+}
+.hd-right {
+  display: none;
+}
+.hd-right-logo {
+  background-image: url(/assets/IMG/goodquality/2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav-middle {
+  display: none;
+}
+.nav-logo {
+  background-image: url(/assets/IMG/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 8vh;
+  width: 15%;
 }
 .burgermenu {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.hd-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 50vh;
 }
 .button {
   border: none;
@@ -600,4 +629,84 @@ footer {
 }
 #designby {
     font-weight: normal;
+}
+
+@media only screen and (min-width:1024px) {
+  header {
+    height: 90vh;
+  }
+  .container {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 2vh;
+  }
+  .sub-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 95%;
+  }
+  .hd-navbar {
+    display: flex;
+    align-items: center;
+  }
+  .nav-logo {
+    height: 7vh;
+  }
+  .nav-middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-middle ul{
+    display: flex;
+    list-style: none;
+  }
+  .nav-middle ul li {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .nav-middle ul li a { 
+    text-decoration: none;
+    color: white;
+  }
+  .mobile-h1 {
+    display: none;
+  }
+  .desktop-h1 {
+    display: flex;
+    font-size: 5.1em;
+  }
+  .hd-content p {
+    font-size: 1.1em;
+  }
+  .button {
+    height: 5vh;
+    width: 30%;
+    margin-left: 10px;
+    font-size: 0.8em;
+  }
+  .hd-left {
+    width: 50%;
+    font-size: 0.8em;
+  }
+  .hd-right {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .hd-right-logo {
+    height: 100%;
+    width: 100%;
+  }
+  .hd-bottom {
+    display: none;
+  }
+  .hd-left-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
