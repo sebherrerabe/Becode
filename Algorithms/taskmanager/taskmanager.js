@@ -1,4 +1,3 @@
-const { time } = require("console");
 let readline = require("readline");
 
 const fs = require('fs');
