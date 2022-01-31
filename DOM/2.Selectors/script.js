@@ -6,6 +6,13 @@ for (const important of importants) {
   important.title = "This is an important item";
 }
 
+for (const image of images) {
+  if (image.classList.contains("important")) {
+    console.log("booyah!");
+  } else {
+    image.style.display = "none";
+  }
+}
 
 for (const p of paragrahps) {
     console.log(p.innerText)
