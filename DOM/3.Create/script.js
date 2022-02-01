@@ -26,6 +26,7 @@ const listOfStudents = [
 
 for (const studentName of listOfStudents) {
   const docNewSection = document.createElement("section");
+
   const getNewNumber = () => {
     let newNumber = parseInt(Math.random() * 256);
     return(newNumber);
@@ -36,7 +37,7 @@ for (const studentName of listOfStudents) {
   finalRGB.push(getNewNumber()),
     finalRGB.push(getNewNumber()),
     finalRGB.push(getNewNumber());
-  console.log(finalRGB);
+    
   let r = finalRGB[0],
     g = finalRGB[1],
     b = finalRGB[2],
