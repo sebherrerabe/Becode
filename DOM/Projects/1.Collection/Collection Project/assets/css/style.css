@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,900;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.margin-20 {
+  margin-top: 20px;
+}
+.margin-10 {
+  margin-top: 10px;
+}
+.margin-5 {
+  margin-top: 5px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(216, 215, 215);
+}
+
+/* CARD */
+
+.card-img {
+  background-image: url(../IMG/danito.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  width: 100%;
+  height: 40%;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+.card-content-top {
+  display: flex;
+}
+.favourite-genre {
+  background-color: teal;
+  padding: 10px;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+}
+.real-name {
+  color: teal;
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+  font-style: italic;
+}
+.description {
+  background-color: teal;
+  padding: 5%;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+.insta {
+  background-image: url(../IMG/instagram.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* PAGE */
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  width: 70%;
+}
+.flex {
+  display: flex;
+}
+.top-container {
+  height: 15vh;
+  width: 100%;
+}
+.top-img-container {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.top-img {
+  background-image: url(../IMG/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+.top-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.collection-container {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(3, 30%);
+  grid-auto-rows: minmax(55%,60%);
+  grid-gap: 20px;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.grid-items1 {
+    font-size: 0.7em;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
+}
+.grid-items2 {
+  background-color: black;
+}
+
+.first-margin {
+    margin-top: 6%;
+}
+.second-margin {
+    margin-top: 4%;
+}
+.third-margin {
+    margin-top: 2%;
+}
