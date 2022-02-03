@@ -16,6 +16,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: rgb(216, 215, 215);
+  height: auto;
 }
 
 /* CARD */
@@ -74,7 +75,7 @@ body {
 .main-container {
   margin-left: auto;
   margin-right: auto;
-  height: 100vh;
+  height: 100%;
   width: 70%;
 }
 .flex {
@@ -106,15 +107,15 @@ body {
 .collection-container {
   display: grid;
   width: 100%;
-  height: auto;
+  height: 100%;
   grid-template-columns: repeat(3, 30%);
-  grid-auto-rows: minmax(55%,60%);
+  grid-auto-rows: minmax(55%, 60%);
   grid-gap: 20px;
   justify-content: space-around;
   margin-top: 5%;
 }
 .grid-items1 {
-    font-size: 0.7em;
+  font-size: 0.7em;
   background-color: whitesmoke;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
@@ -125,11 +126,53 @@ body {
 }
 
 .first-margin {
-    margin-top: 6%;
+  margin-top: 6%;
 }
 .second-margin {
-    margin-top: 4%;
+  margin-top: 4%;
 }
 .third-margin {
-    margin-top: 2%;
+  margin-top: 2%;
+}
+@media only screen and (max-width: 1025px) {
+  body {
+    font-size: 0.9em;
+  }
+  .main-container {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.9em;
+  }
+  .main-container {
+    width: 90%;
+  }
+  .collection-container {
+    grid-template-columns: repeat(2, 47%);
+    grid-auto-rows: minmax(35%, 50%);
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    font-size: 1.1em;
+  }
+  .main-container {
+    width: 97%;
+  }
+  .top-container {
+    justify-content: space-around;
+    font-size: 0.9em;
+  }
+  .top-info-container p{
+    display: none;
+  }
+  .collection-container {
+    grid-template-columns: repeat(1, 90%);
+    grid-auto-rows: minmax(18%, 50%);
+    grid-gap: 20px;
+  }
 }

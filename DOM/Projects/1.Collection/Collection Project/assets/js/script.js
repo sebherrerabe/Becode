@@ -3,7 +3,7 @@ const dknSingers = [
     artistName: "Angelo Killer",
     oldNames: ["Sco"],
     realName: "Italo Angelo Rivera Cardenas",
-    genres: ["Rap", "Reggae", "Dancehall", "Reggaeton", "Trap", "Dembow"],
+    genres: ["Rap", "Reggaeton", "Trap", "Dembow"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
     insta: "https://www.instagram.com/3lkiller/"
@@ -30,7 +30,7 @@ const dknSingers = [
     artistName: "Seb D",
     oldNames: ["Mc Dokken", "Sebastian Dokenbwoy", "Seb D'bwoy"],
     realName: "Sebastian Felipe Herrera Concha",
-    genres: ["Rap", "Reggae", "Dancehall", "Reggaeton", "Trap", "Dembow"],
+    genres: ["Rap", "Dancehall", "Reggaeton", "Trap"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
     insta: "https://www.instagram.com/sebherrera.cl/"
@@ -39,7 +39,7 @@ const dknSingers = [
     artistName: "Sale",
     oldNames: ["Sale al Graf"],
     realName: "Ignacio Vaargas",
-    genres: ["Rap", "R&B", "Reggae", "Dancehall", "Reggaeton", "Trap", "Dembow"],
+    genres: ["Rap", "Reggae", "Dancehall", "Reggaeton"],
     favouriteGenre: "Rap",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
     insta: "https://www.instagram.com/ignaciotiburon/"
@@ -48,7 +48,7 @@ const dknSingers = [
     artistName: "Uzbell",
     oldNames: ["Jimmy King"],
     realName: "Jimmy Bravo",
-    genres: ["Mambo", "Reggae", "Reggaeton", "Trap", "Dembow"],
+    genres: ["Mambo", "Reggae", "Reggaeton", "Trap" ],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
     insta: "https://www.instagram.com/p/CZXSNfguVpY/"
@@ -57,7 +57,7 @@ const dknSingers = [
     artistName: "Bonivoice",
     oldNames: ["Dizlow", "Alex King"],
     realName: "Ignacio Alexander Bonilla Campusano",
-    genres: ["Dancehall", "Mambo", "Reggaeton", "Trap", "Dembow"],
+    genres: ["Dancehall", "Mambo", "Reggaeton", "Trap"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
     insta: "https://www.instagram.com/bonillak0/"
@@ -66,7 +66,16 @@ const dknSingers = [
     artistName: "Aaron Riders",
     oldNames: ["El Sinda", "Donek"],
     realName: "Omar Aarón Vásquez Vásquez",
-    genres: ["Dancehall", "Mambo", "Reggaeton", "Trap", "Dembow"],
+    genres: ["Dancehall", "Mambo", "Reggaeton", "Trap"],
+    favouriteGenre: "Reggaeton",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
+    insta: "https://www.instagram.com/ignaciotiburon/"
+  },
+  {
+    artistName: "Danito, el huerfanito",
+    oldNames: ["DanyKing", "Dani el de la D"],
+    realName: "Daniel Perez Gonzalez",
+    genres: ["Dancehall", "Mambo", "Reggaeton", "Trap"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
     insta: "https://www.instagram.com/ignaciotiburon/"
