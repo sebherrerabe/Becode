@@ -6,7 +6,8 @@ const dknSingers = [
     genres: ["Rap", "Reggaeton", "Trap", "Dembow"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
-    insta: "https://www.instagram.com/3lkiller/"
+    insta: "https://www.instagram.com/3lkiller/",
+    img: './assets/IMG/angelo.jpg'
   },
   {
     artistName: "Pemjean",
@@ -15,7 +16,8 @@ const dknSingers = [
     genres: ["Rap", "R&B", "Trap", "Dancehall", "Reggaeton"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
-    insta: "https://www.instagram.com/bastian_pemjean/"
+    insta: "https://www.instagram.com/bastian_pemjean/",
+    img: './assets/IMG/pemjean.png'
   },
   {
     artistName: "El Hvrmin",
@@ -24,7 +26,8 @@ const dknSingers = [
     genres: ["Trap", "Reggaeton", "Dembow"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
-    insta: "https://www.instagram.com/elhvrmin/"
+    insta: "https://www.instagram.com/elhvrmin/",
+    img: './assets/IMG/armin.png'
   },
   {
     artistName: "Seb D",
@@ -33,7 +36,8 @@ const dknSingers = [
     genres: ["Rap", "Dancehall", "Reggaeton", "Trap"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
-    insta: "https://www.instagram.com/sebherrera.cl/"
+    insta: "https://www.instagram.com/sebherrera.cl/",
+    img: './assets/IMG/logo.jpg'
   },
   {
     artistName: "Sale",
@@ -42,7 +46,8 @@ const dknSingers = [
     genres: ["Rap", "Reggae", "Dancehall", "Reggaeton"],
     favouriteGenre: "Rap",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
-    insta: "https://www.instagram.com/ignaciotiburon/"
+    insta: "https://www.instagram.com/ignaciotiburon/",
+    img: './assets/IMG/sale.jpg'
   },
   {
     artistName: "Uzbell",
@@ -51,7 +56,8 @@ const dknSingers = [
     genres: ["Mambo", "Reggae", "Reggaeton", "Trap" ],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
-    insta: "https://www.instagram.com/p/CZXSNfguVpY/"
+    insta: "https://www.instagram.com/p/CZXSNfguVpY/",
+    img: './assets/IMG/uzbel.jpg'
   },
   {
     artistName: "Bonivoice",
@@ -60,7 +66,8 @@ const dknSingers = [
     genres: ["Dancehall", "Mambo", "Reggaeton", "Trap"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
-    insta: "https://www.instagram.com/bonillak0/"
+    insta: "https://www.instagram.com/bonillak0/",
+    img: './assets/IMG/bonivoice.jpg'
   },
   {
     artistName: "Aaron Riders",
@@ -69,7 +76,8 @@ const dknSingers = [
     genres: ["Dancehall", "Mambo", "Reggaeton", "Trap"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
-    insta: "https://www.instagram.com/ignaciotiburon/"
+    insta: "https://www.instagram.com/ignaciotiburon/",
+    img: './assets/IMG/aaron.jpg'
   },
   {
     artistName: "Danito, el huerfanito",
@@ -78,13 +86,15 @@ const dknSingers = [
     genres: ["Dancehall", "Mambo", "Reggaeton", "Trap"],
     favouriteGenre: "Reggaeton",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit cum veritatis soluta sequi, suscipit quo tempore totam, omnis explicabo doloremque debitis iusto quam sit. Repudiandae temporibus cupiditate quae unde.",
-    insta: "https://www.instagram.com/ignaciotiburon/"
+    insta: "https://www.instagram.com/ignaciotiburon/",
+    img: './assets/IMG/danito.png'
   },
 ];
 
 const body = document.body,
 mainContainer = body.children[0],
 collectionContainer = mainContainer.children[1]
+
 
 console.log(collectionContainer)
 
@@ -110,6 +120,8 @@ const makeNewCard = (i) => {
     addClass(newDiv,"grid-items1")
     const newCardImg = makeElement('div')
     addClass(newCardImg,"card-img")
+    newCardImg.style.backgroundImage = `url(${dknSingers[i].img})`;
+    console.log(newCardImg.style.backgroundImage)
     newDiv.appendChild(newCardImg)
     const newCardContent = makeElement('div')
     addClass(newCardContent, "card-content")
