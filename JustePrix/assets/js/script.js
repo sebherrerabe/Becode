@@ -26,11 +26,13 @@ const sendLevel = (level) => {
 let currentState = "first",
   previousState = "",
   houseNumber = 0,
-  i = 0;
+  i = 0,
+  max = 0,
+  bid = 0
 
 const fairPrice = () => {
   let answer = inputUser.value;
-  let choice, bid, max;
+  let choice
   let level;
   let choice2;
   if (
