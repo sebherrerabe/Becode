@@ -1,72 +1,102 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 .main-container {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 .console-container {
-    display: flex;
-    height: 80%;
-    width: 40%;
-    flex-direction: column;
+  display: flex;
+  height: 80%;
+  width: 40%;
+  flex-direction: column;
 }
 .bt-container {
-    background-color: teal;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 12%;
-    width: 100%;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 12%;
+  width: 100%;
 }
 .chat-container {
-    background-color: rgb(20, 20, 20);
-    height: 78%;
-    overflow-x: hidden;
-    padding-left: 10px;
-    padding-right: 10px;
+  background-color: rgb(20, 20, 20);
+  height: 78%;
+  overflow-x: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .bar {
-    display: flex;
-    color: white;
-    height: 6%;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  color: white;
+  height: 6%;
+  width: 100%;
+  align-items: center;
 }
 .userbar {
-    display: flex;
-    justify-content: flex-end;
-    color: rgb(0, 201, 201);
-    height: 6%;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(0, 201, 201);
+  height: 6%;
+  width: 100%;
+  align-items: center;
 }
 .input-container {
-    background-color: teal;
-    display: flex;
-    height: 10%;
-    width: 100%;
-    align-items: center;
+  background-color: teal;
+  display: flex;
+  height: 10%;
+  width: 100%;
+  align-items: center;
 }
 .input-container input {
-    height: 50%;
-    width: 87%;
+  height: 50%;
+  width: 87%;
 }
 button {
-    height: 56%;
-    width: 13%;
-    border: none;
-    background: black;
-    color: white;
-    border: solid 1px white;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 56%;
+  width: 13%;
+  border: none;
+  background: black;
+  color: white;
+  border: solid 1px white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .console-container {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 426px) {
+    .console-container {
+        width: 80%;
+      }
+      button {
+          width: 20%;
+      }
+}
+@media only screen and (max-width: 376px) {
+    .console-container {
+        width: 90%;
+      }
+      button {
+          width: 20%;
+      }
+}
+@media only screen and (max-width: 321px) {
+    .console-container {
+        width: 95%;
+      }
+      button {
+          width: 25%;
+      }
 }

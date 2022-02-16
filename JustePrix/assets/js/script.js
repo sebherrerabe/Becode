@@ -113,6 +113,11 @@ const fairPrice = () => {
 
 startBT.addEventListener("click", () => {
   fairPrice();
+  inputUser.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     userBT.click();
+    }})
   userBT.addEventListener("click", () => {
     fairPrice();
   });
@@ -121,6 +126,8 @@ startBT.addEventListener("click", () => {
 quitBT.addEventListener("click", () => {
   window.close();
 });
+
+
 
 // const stateEX = () => {
 //   let answer = inputUser.value;
