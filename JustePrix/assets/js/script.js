@@ -8,6 +8,7 @@ const sendMessage = (text, isUser) => {
   const newBar = document.createElement("div");
   if (isUser === true) {
     newBar.classList.add("userbar");
+    inputUser.value = ""
   } else {
     newBar.classList.add("bar");
   }
